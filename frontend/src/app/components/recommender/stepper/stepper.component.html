@@ -1,0 +1,20 @@
+<section class="example-container">
+    <header>
+      <h2>Pregunta {{ selectedIndex + 1 }}/{{ steps.length }}</h2>
+    </header>
+  
+    <div [ngTemplateOutlet]="selected ? selected.content : null"></div>
+  
+    <footer class="example-step-navigation-bar">
+      <button class="btn btn-primary" cdkStepperPrevious>&larr;</button>
+      <!-- <button
+        class="btn btn-primary"
+        [class.example-active]="selectedIndex === i"
+        *ngFor="let step of steps; let i = index"
+        (click)="selectStepByIndex(i)"
+      >
+        Step {{ i + 1 }}
+      </button> -->
+      <button class="btn btn-primary" cdkStepperNext>&rarr;</button>
+    </footer>
+  </section>

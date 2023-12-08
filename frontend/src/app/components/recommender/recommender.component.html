@@ -1,6 +1,6 @@
 <section>
-  <!-- <div class="container">
-    <form #form="ngForm">
+  <div class="container">
+    <!-- <form #form="ngForm">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Pregunta</label>
         <input
@@ -20,7 +20,27 @@
       </div>
       <button type="submit" class="btn btn-primary">Anterior</button>
       <button type="submit" class="btn btn-primary">Siguiente</button>
-    </form>
-  </div> -->
+    </form> -->
+    <app-stepper>
+      <cdk-step *ngFor="let step of steps">
+        <form #form="ngForm">
+          <div class="d-flex flex-column justify-content-center mb-3">
+            <p>{{ step.pregunta }}</p>
+            Tu respuesta <input />
+            Ejemplo práctico:<textarea></textarea>
+          </div>
+        </form>
+      </cdk-step>
+    </app-stepper>
+    <div class="card p-4 w-50">
+        <canvas
+            baseChart
+            class="chart"
+            [data]="doughnutChartData"
+            [type]="doughnutChartType"
+        ></canvas>
+        <label>Lo lograste!!!</label>
+        <button class="btn btn-primary" (click)="goBack()">Finalizar</button>
+    </div>
+  </div>
 </section>
-

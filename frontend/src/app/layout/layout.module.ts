@@ -5,7 +5,6 @@ import { HeaderComponent } from "./header/header.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { RouterModule, Routes } from "@angular/router";
 import { MainComponent } from "./main/main.component";
-import { LoginComponent } from "../components/login/login.component";
 
 const routes: Routes = [
     {
@@ -30,6 +29,10 @@ const routes: Routes = [
           path: '',
           outlet: 'sidebar',
           component: SidebarComponent,
+        },
+        {
+          path: 'recommender',
+          loadChildren: () => import('src/app/components/recommender/recommender.module').then(m => m.RecommenderModule),
         }
       ],
     },
