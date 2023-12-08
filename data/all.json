@@ -1,6 +1,67 @@
 {
   "1": {
-    "name": "mati",
+    "userName": "martingz@openix.com.ar",
+    "profileImg":"https://openix-sia-mediafiles-prod.s3.us-east-1.amazonaws.com/profile_picture/cfe6059a-1514-4424-8b45-12f024c1a1c4.png",
+    "password": "35554829",
+    "Name": "Martin",
+    "surname": "Gutierrez",
+    "seniority": "Training",
+    "legajo": 1,
+    "insignia": "{{path}}",
+    "technicalProfile": {
+      "programingLanguage": [
+        {
+          "id": 1,
+          "languageName": "Kotlin"
+        },
+        {
+          "id": 2,
+          "languageName": "Swift"
+        },
+        {
+          "id": 3,
+          "languageName": "Java"
+        },
+        {
+          "id": 4,
+          "languageName": "Dart"
+        }
+      ],
+      "frameworks": [
+        {
+          "id": 1,
+          "frameworkName": "flater"
+        }
+      ],
+      "tools": [
+        {
+          "id": 1,
+          "toolName": "Visual Studio Code"
+        },
+        {
+          "id": 2,
+          "toolName": "Android Studio"
+        },
+        {
+          "id": 3,
+          "toolName": "XCode"
+        }
+      ],
+      "databases": [
+        {
+          "id": 1,
+          "databaseName": "PostgreSQL"
+        },
+        {
+          "id": 2,
+          "databaseName": "SQLite"
+        },
+        {
+          "id": 3,
+          "databaseName": "FireBase"
+        }
+      ]
+    },
     "courses": [
       {
         "coursesId": "1",
@@ -39,17 +100,98 @@
     ]
   },
   "2": {
-    "name": "emanuel",
+    "userName": "fernando@openix.com.ar",
+    "profileImg":"https://openix-sia-mediafiles-prod.s3.us-east-1.amazonaws.com/profile_picture/cfe6059a-1514-4424-8b45-12f024c1a1c4.png",
+    "password": "39200693",
+    "Name": "Fernando",
+    "surname": "Murguia",
+    "seniority": "SS1",
+    "legajo": 2,
+    "insignia": "{{path}}",
+    "technicalProfile": {
+      "programingLanguage": [
+        {
+          "id": 5,
+          "languageName": "C#"
+        },
+        {
+          "id": 6,
+          "languageName": "JavaScript"
+        },
+        {
+          "id": 7,
+          "languageName": "Python"
+        }
+      ],
+      "frameworks": [
+        {
+          "id": 2,
+          "frameworkName": "Polymer"
+        },
+          {
+          "id": 3,
+          "frameworkName": "Angular"
+        },
+        {
+          "id": 4,
+          "frameworkName": "React"
+        }
+      ],
+      "tools": [
+        {
+          "id": 1,
+          "toolName": "Visual Studio Code"
+        },
+        {
+          "id": 4,
+          "toolName": "Visual Studio"
+        }
+      ],
+      "databases": [
+        {
+          "id": 1,
+          "databaseName": "Microsoft Sql"
+        },
+        {
+          "id": 2,
+          "databaseName": "MySql"
+        }
+      ]
+    },
     "courses": [
       {
         "coursesId": "1",
         "name": "Angular desde 0",
-        "coursesProgress": "30%"
-      },
-      {
-        "coursesId": "2",
-        "name": "React desde cero",
-        "coursesProgress": "45%"
+        "coursesProgress": "70%",
+        "sections": [
+          {
+            "name": "micropodcast a Angular",
+            "content": "Bienvenidos a este episodio del micropodcast sobre Angular. En este programa, daremos una introducción a Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es un framework de código abierto desarrollado por Google que permite crear aplicaciones web de una manera rápida y eficiente. A lo largo de este episodio, exploraremos los conceptos básicos de Angular, incluyendo componentes, templates, servicios, dependency injection, routing y navegación.",
+            "test": {
+              "question": "¿Quién desarrolló Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web?",
+              "type": 2,
+              "answerId": 3,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "Facebook"
+                },
+                {
+                  "id": 2,
+                  "name": "Microsoft"
+                },
+                {
+                  "id": 3,
+                  "name": "Google"
+                },
+                {
+                  "id": 4,
+                  "name": "Apple"
+                }
+              ]
+            }
+          }
+        ]
       }
     ]
   }
