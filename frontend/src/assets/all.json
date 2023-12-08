@@ -69,6 +69,7 @@
         "coursesId": "1",
         "name": "Angular desde 0",
         "coursesProgress": "70%",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
         "sections": [
           {
             "name": "introduccion a Angular",
@@ -287,6 +288,7 @@
         "coursesId": "1",
         "name": "Angular desde 0",
         "coursesProgress": "70%",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
         "sections": [
           {
             "name": "micropodcast a Angular",
