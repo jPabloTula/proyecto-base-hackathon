@@ -1,0 +1,70 @@
+{
+    "login": {
+        "users": [
+            {
+                "userName": "martingz@openix.com.ar",
+                "password": "35554829",
+                "Name": "Martin",
+                "surname": "Gutierrez",
+                "seniority": "Training",
+                "legajo": 1,
+                "insignia": "{{path}}",
+                "technicalProfile": {
+                    "programingLanguage": [
+                        {
+                            "id": 1,
+                            "languageName": "Kotlin"
+                        },
+                        {
+                            "id": 2,
+                            "languageName": "Swift"
+                        },
+                        {
+                            "id": 3,
+                            "languageName": "Java"
+                        },
+                        {
+                            "id": 4,
+                            "languageName": "Dart"
+                        }
+                    ],
+                    "frameworks": [
+                        {
+                            "id": 1,
+                            "frameworkName": "flater"
+                        }
+                    ],
+                    "tools": [
+                        {
+                            "id": 1,
+                            "toolName": "Visual Studio Code"
+                        },
+                        {
+                            "id": 2,
+                            "toolName": "Android Studio"
+                        },
+                        {
+                            "id": 1,
+                            "toolName": "XCode"
+                        }
+                    ],
+                    "databases": [
+                        {
+                            "id": 1,
+                            "databaseName": "PostgreSQL"
+                        },
+                        {
+                            "id": 2,
+                            "databaseName": "SQLite"
+                        },
+                        {
+                            "id": 3,
+                            "databaseName": "FireBase"
+                        }
+                    ]
+                },
+                "Courses": {}
+            }
+        ]
+    }
+}
