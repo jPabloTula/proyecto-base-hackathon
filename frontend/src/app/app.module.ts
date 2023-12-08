@@ -10,6 +10,7 @@ import { RecommenderComponent } from './components/recommender/recommender.compo
 import { LayoutModule } from './layout/layout.module';
 import { MainComponent } from './layout/main/main.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CommonModule } from '@angular/common';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,198 @@
+{
+    "1": {
+        "userName": "martingz@openix.com.ar",
+        "profileImg": "https://openix-sia-mediafiles-prod.s3.us-east-1.amazonaws.com/profile_picture/cfe6059a-1514-4424-8b45-12f024c1a1c4.png",
+        "password": "35554829",
+        "Name": "Martin",
+        "surname": "Gutierrez",
+        "seniority": "Training",
+        "legajo": 1,
+        "insignia": "{{path}}",
+        "technicalProfile": {
+            "programingLanguage": [
+                {
+                    "id": 1,
+                    "languageName": "Kotlin"
+                },
+                {
+                    "id": 2,
+                    "languageName": "Swift"
+                },
+                {
+                    "id": 3,
+                    "languageName": "Java"
+                },
+                {
+                    "id": 4,
+                    "languageName": "Dart"
+                }
+            ],
+            "frameworks": [
+                {
+                    "id": 1,
+                    "frameworkName": "flater"
+                }
+            ],
+            "tools": [
+                {
+                    "id": 1,
+                    "toolName": "Visual Studio Code"
+                },
+                {
+                    "id": 2,
+                    "toolName": "Android Studio"
+                },
+                {
+                    "id": 3,
+                    "toolName": "XCode"
+                }
+            ],
+            "databases": [
+                {
+                    "id": 1,
+                    "databaseName": "PostgreSQL"
+                },
+                {
+                    "id": 2,
+                    "databaseName": "SQLite"
+                },
+                {
+                    "id": 3,
+                    "databaseName": "FireBase"
+                }
+            ]
+        },
+        "courses": [
+            {
+                "coursesId": "1",
+                "name": "Angular desde 0",
+                "coursesProgress": "70%",
+                "sections": [
+                    {
+                        "name": "introduccion a Angular",
+                        "content": "En este episodio, vamos a introducirnos en el mundo de Angular, un framework de desarrollo web creado por Google.\n Angular es una herramienta muy poderosa que nos permite construir aplicaciones web de una manera más eficiente y estructurada. Empecemos por entender qué es Angular y cómo funciona.\n Angular es un framework de código abierto que utiliza el patrón de diseño Modelo-Vista-Controlador (MVC) para desarrollar aplicaciones web de una forma modular y escalable. Esto significa que podemos dividir nuestra aplicación en componentes reutilizables, lo cual nos permite mantener un código más limpio y fácil de mantener. \n Una de las características más destacadas de Angular es su sistema de templates. Los templates en Angular son archivos HTML mejorados, que nos permiten incluir lógica y datos dinámicos en nuestras vistas. Esto nos ayuda a construir interfaces de usuario más interactivas y dinámicas.\n Para trabajar con Angular, necesitaremos tener instalado Node.js, que es un entorno de ejecución de JavaScript en el servidor. También utilizaremos el gestor de paquetes npm, que nos permitirá instalar las dependencias necesarias para nuestro proyecto. \n Una vez que tenemos Node.js y npm instalados, podemos crear un nuevo proyecto de Angular utilizando el comando `ng new`. Esto nos generará una estructura de carpetas y archivos base para nuestro proyecto.\n Una vez que nuestro proyecto está creado, podemos empezar a desarrollar nuestros componentes. Los componentes son la pieza fundamental de una aplicación Angular, ya que representan una parte de la interfaz de usuario y contienen su propia lógica y estilos. Podemos pensar en ellos como bloques de construcción reutilizables. \n Además de los componentes, Angular también nos ofrece la posibilidad de trabajar con servicios y dependency injection. Los servicios son clases que nos permiten encapsular la lógica de negocio de nuestra aplicación y compartir datos entre componentes. Por otro lado, la dependency injection nos permite inyectar estas dependencias en nuestros componentes de una manera sencilla y transparente.\n Otra característica importante de Angular es su sistema de routing y navegación. Esto nos permite definir rutas para nuestras páginas y navegar entre ellas de forma fluida. Esto es especialmente útil cuando queremos construir aplicaciones de una sola página (SPA) o cuando necesitamos navegar entre diferentes vistas dentro de nuestra aplicación.\n En resumen, Angular es un framework de desarrollo web muy poderoso que nos permite construir aplicaciones web de una manera más eficiente y estructurada. En este episodio, hemos visto una introducción a Angular, hablando sobre los componentes y templates, servicios y dependency injection, y el sistema de routing y navegación. En los próximos episodios, profundizaremos en cada uno de estos temas y veremos ejemplos prácticos de su uso. ¡Hasta la próxima!",
+                        "test": {
+                            "question": "¿Qué característica de Angular nos permite definir rutas para nuestras páginas y facilita la navegación entre ellas de manera fluida?",
+                            "type": 2,
+                            "answerId": 4,
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "name": "Dependency Injection"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Sistema de Templates"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Servicios"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Routing y Navegación"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "2": {
+        "userName": "fernando@openix.com.ar",
+        "profileImg": "https://openix-sia-mediafiles-prod.s3.us-east-1.amazonaws.com/profile_picture/cfe6059a-1514-4424-8b45-12f024c1a1c4.png",
+        "password": "39200693",
+        "Name": "Fernando",
+        "surname": "Murguia",
+        "seniority": "SS1",
+        "legajo": 2,
+        "insignia": "{{path}}",
+        "technicalProfile": {
+            "programingLanguage": [
+                {
+                    "id": 5,
+                    "languageName": "C#"
+                },
+                {
+                    "id": 6,
+                    "languageName": "JavaScript"
+                },
+                {
+                    "id": 7,
+                    "languageName": "Python"
+                }
+            ],
+            "frameworks": [
+                {
+                    "id": 2,
+                    "frameworkName": "Polymer"
+                },
+                {
+                    "id": 3,
+                    "frameworkName": "Angular"
+                },
+                {
+                    "id": 4,
+                    "frameworkName": "React"
+                }
+            ],
+            "tools": [
+                {
+                    "id": 1,
+                    "toolName": "Visual Studio Code"
+                },
+                {
+                    "id": 4,
+                    "toolName": "Visual Studio"
+                }
+            ],
+            "databases": [
+                {
+                    "id": 1,
+                    "databaseName": "Microsoft Sql"
+                },
+                {
+                    "id": 2,
+                    "databaseName": "MySql"
+                }
+            ]
+        },
+        "courses": [
+            {
+                "coursesId": "1",
+                "name": "Angular desde 0",
+                "coursesProgress": "70%",
+                "sections": [
+                    {
+                        "name": "micropodcast a Angular",
+                        "content": "Bienvenidos a este episodio del micropodcast sobre Angular. En este programa, daremos una introducción a Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es un framework de código abierto desarrollado por Google que permite crear aplicaciones web de una manera rápida y eficiente. A lo largo de este episodio, exploraremos los conceptos básicos de Angular, incluyendo componentes, templates, servicios, dependency injection, routing y navegación.",
+                        "test": {
+                            "question": "¿Quién desarrolló Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web?",
+                            "type": 2,
+                            "answerId": 3,
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "name": "Facebook"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Microsoft"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Google"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Apple"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

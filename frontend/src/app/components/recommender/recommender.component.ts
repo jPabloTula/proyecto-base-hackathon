@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ChartData, ChartEvent, ChartType } from 'chart.js';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-recommender',
@@ -34,11 +35,21 @@ export class RecommenderComponent implements OnInit {
   respuesta: string = '';
   respuestaPractica: string = '';
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.getDataFromJson();
   }
 
+  getDataFromJson() {
+    this.dataService.getData().subscribe({
+      next: res => {
+        console.log('Datos: ', res);
+      }
+    })
+  }
   goBack() {
     this.router.navigate(['/dashboard']);
   }
