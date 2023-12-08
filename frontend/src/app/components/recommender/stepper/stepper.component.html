@@ -6,7 +6,7 @@
     <div [ngTemplateOutlet]="selected ? selected.content : null"></div>
   
     <footer class="example-step-navigation-bar">
-      <button *ngIf="selectedIndex == 1" class="btn btn-primary m-1" cdkStepperPrevious>&larr;</button>
+      <button class="btn btn-primary m-1" cdkStepperPrevious>&larr;</button>
       <button
         class="btn btn-primary m-1"
         [class.example-active]="selectedIndex === i"

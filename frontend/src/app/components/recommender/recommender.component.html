@@ -1,6 +1,6 @@
 <section>
   <div class="container d-flex justify-content-between">
-    <app-stepper *ngIf="index !== 0" (isLast)="checkLast()" [size]="data?.length" class="col-md-6">
+    <app-stepper *ngIf="index !== 0" (isLast)="checkLast()" (size)="data?.length" class="col-md-6">
       <cdk-step *ngFor="let d of data; let i = index">
         <form *ngIf="myForm" [formGroup]="myForm">
           <div class="d-flex flex-column justify-content-center mb-3">
@@ -21,7 +21,7 @@
         </form>
       </cdk-step>
     </app-stepper>
-    <div class="card p-4 w-35 col-md-4" *ngIf="">
+    <div class="card p-4 w-35 col-md-4">
       <canvas
         baseChart
         class="chart"
