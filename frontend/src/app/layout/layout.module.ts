@@ -8,11 +8,11 @@ import { MainComponent } from "./main/main.component";
 
 const routes: Routes = [
     {
-      path: 'login',
+      path: '',
       loadChildren: () => import('src/app/components/login/login.module').then(m => m.LoginModule),
     },
     {
-      path: 'main',
+      path: 'home',
       component: MainComponent,
       children: [
         {
@@ -33,6 +33,10 @@ const routes: Routes = [
         {
           path: 'recommender',
           loadChildren: () => import('src/app/components/recommender/recommender.module').then(m => m.RecommenderModule),
+        },
+        {
+          path: 'dashboard',
+          loadChildren: () => import('src/app/components/dashboard/dashboard.module').then(m => m.DashboardModule),
         }
       ],
     },
@@ -48,7 +52,7 @@ const routes: Routes = [
     ],
     imports: [
         CommonModule,
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes),
     ]
 })
 

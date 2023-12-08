@@ -2,3 +2,80 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+  }
+
+  #app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  #header,
+  #footer {
+    display: flex;
+    color: #fff;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    width: auto;
+    
+  }
+
+  #header{
+    border-bottom: 2px solid #8e44ad;
+  }
+  
+  #footer{
+    border-top: 2px solid #8e44ad;
+  }
+  .container {
+    display: flex;
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  #sidebar {
+    color: #fff;
+    width: 160px;
+    min-height: 80vh;
+    flex-shrink: 0;
+    overflow-y: auto;
+    border-right: 2px solid #8e44ad;
+  }
+  
+  #content {
+    flex-grow: 1;
+    padding: 20px;
+    min-height: calc(100vh - 15vh);
+  }
+
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    #app-container {
+      flex-direction: column-reverse;
+    }
+
+    #sidebar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: none;
+    }
+
+    #content {
+      margin-top: 60px; /* Ajusta según la altura del sidebar */
+    }
+
+    #sidebar.collapsed {
+      display: none;
+    }
+  }

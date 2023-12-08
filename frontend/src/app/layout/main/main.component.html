@@ -1,6 +1,14 @@
-<router-outlet name="header" ></router-outlet>
-<router-outlet name="sidebar"></router-outlet>
-<div id="content">
-    <router-outlet></router-outlet>
+<div id="header">  
+    <router-outlet name="header" ></router-outlet>
 </div>
-<router-outlet name="footer"></router-outlet>
+<div class="container">
+    <div id="sidebar">
+        <router-outlet name="sidebar"></router-outlet>
+    </div>
+    <div id="content">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+<div id="footer">
+    <router-outlet name="footer"></router-outlet>
+</div>
