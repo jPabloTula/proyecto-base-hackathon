@@ -1,0 +1,40 @@
+.container {
+    // background-color: #000000;
+
+
+    .logo-login {
+        width: 400px;
+        height: 400px;
+    }
+
+    .logo {
+        width: 400px;
+    }
+
+    .form {
+        margin-top: 30px;
+
+        .form-label {
+            color: #C2C2C2;
+        }
+
+        .input {
+            border-radius: 25px;
+            background-color: #373737 !important;
+            border: none;
+        }
+
+        input::placeholder {
+            color: #808080;
+            font-size: 16px;
+            font-style: italic;
+          }
+    
+        .submit {
+            border-radius: 25px;
+            width: 100%;
+            color: #FFFFFFFF;
+            background-color: #810FE1;
+        }
+    }
+}

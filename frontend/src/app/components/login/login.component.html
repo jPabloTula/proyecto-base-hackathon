@@ -1,36 +1,26 @@
-<div class="d-flex justify-content-center align-items-center vh-100">
-  <div class="card p-4 w-50">
-    <h2 class="text-center mb-4">Iniciar Sesión</h2>
-    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
-      <div class="mb-3 form-group">
-        <label for="username" class="form-label">Nombre de Usuario:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="username"
-          name="username"
-          [(ngModel)]="username"
-          required
-        />
+
+<section class="vh-100">
+  <div class="container py-5 h-100 d-flex justify-content-center">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="d-none d-lg-block col-lg-7 col-xl-6 ">
+        <img class="logo-login" src="../../../assets//images/img-login.jpeg" alt="logo-login">
       </div>
-      <div class="mb-3 form-group">
-        <label for="password" class="form-label">Contraseña:</label>
-        <input
-          type="password"
-          class="form-control"
-          id="password"
-          name="password"
-          [(ngModel)]="password"
-          required
-        />
+      <div class="col-sm-5 col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <img src="../../../assets/images/logo.jpeg" alt="logo" class="logo">
+
+        <form #form="ngForm" (ngSubmit)="onSubmit(form)" class="form">
+            <div class="form-outline mb-4 form-group">
+            <label class="form-label" for="form1Example13">Email</label>
+            <input type="email" id="form1Example13" class="form-control form-control-lg input" placeholder="Ingrese su Email" />
+          </div>
+          <div class="form-outline mb-4 form-group">
+            <label class="form-label" for="form1Example23">Contraseña</label>
+            <input type="password" id="form1Example23" class="form-control form-control-lg input" placeholder="Ingrese su Contraseña" />
+          </div>
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-lg btn-block submit">Iniciar Sesión</button>
+        </form>
       </div>
-      <button
-        type="submit"
-        class="btn btn-primary"
-        [disabled]="!form.form.valid"
-      >
-        Iniciar Sesión
-      </button>
-    </form>
+    </div>
   </div>
-</div>
+</section>
