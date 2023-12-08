@@ -9,21 +9,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RecommenderComponent } from './components/recommender/recommender.component';
 import { LayoutModule } from './layout/layout.module';
+import { MainComponent } from './layout/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    DashboardComponent,
-    RecommenderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    FormsModule,
-    ReactiveFormsModule,
-    LayoutModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

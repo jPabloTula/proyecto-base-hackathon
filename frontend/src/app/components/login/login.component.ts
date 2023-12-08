@@ -19,6 +19,6 @@ export class LoginComponent implements OnInit {
   onSubmit(form: NgForm) {
     console.log('Nombre de usuario:', this.username);
     console.log('Contraseña:', this.password);
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/main']);
   }
 }
