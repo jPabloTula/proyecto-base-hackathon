@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ChartData, ChartEvent, ChartType } from 'chart.js';
 import { DataService } from 'src/app/services/data.service';
@@ -34,33 +34,56 @@ export class RecommenderComponent implements OnInit {
   ]
   respuesta: string = '';
   respuestaPractica: string = '';
+  data: any;
+  selectedOption: string = '';
+  index: number = 0;
+  myForm: FormGroup | undefined;
+  answers: any[] = [];
+
 
   constructor(
     private router: Router,
-    private dataService: DataService) { }
+    private dataService: DataService,
+    private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.getDataFromJson();
+    this.myForm = this.formBuilder.group({
+      answer:''
+    });
+  }
+
+  checkLast(): boolean {
+    if (this.index === this.data.length) {
+      return true;
+    }
+    return false;
+  }
+
+  showValue() {
+    console.log(this.myForm?.getRawValue());
+    this.answers.push(this.myForm?.getRawValue());
   }
 
   getDataFromJson() {
     this.dataService.getData().subscribe({
       next: res => {
-        console.log('Datos: ', res);
+        this.data = res[0].courses[0].sections[0].test;
+        this.index = this.data.length;
       }
     })
   }
   goBack() {
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['home']);
   }
 
   public doughnutChartLabels: string[] = [
-    'Download Sales'
+    'Porcentaje de exito'
   ];
   public doughnutChartData: ChartData<'doughnut'> = {
     labels: this.doughnutChartLabels,
     datasets: [
-      { data: [350, 450, 100] }
+      { data: [350, 0, 100] }
     ],
   };
   public doughnutChartType: ChartType = 'doughnut';

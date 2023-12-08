@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CdkStepper } from '@angular/cdk/stepper';
 
 @Component({
@@ -7,14 +7,26 @@ import { CdkStepper } from '@angular/cdk/stepper';
   styleUrls: ['./stepper.component.scss'],
   providers: [{provide: CdkStepper, useExisting: StepperComponent}]
 })
-export class StepperComponent extends CdkStepper implements OnInit {
+export class StepperComponent extends CdkStepper implements OnInit  {
+  @Output() isLast: EventEmitter<any> = new EventEmitter<any>();
+  @Input() size: number = 0;
+  currentIndex: number = 0;
 
   ngOnInit(): void {
+    
   }
-
   selectStepByIndex(index: number): void {
     this.selectedIndex = index;
-    console.log(this.selectedIndex);
+  }
+
+  nextStep(index: number): void {
+    this.next();
+    console.log('index', index);
+    if (this.currentIndex <= index) {
+      ++this.currentIndex;
+    } else {
+      this.isLast.emit(true);
+    }
   }
 
 }
