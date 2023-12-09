@@ -43,8 +43,18 @@ export class DashboardComponent implements OnInit {
           this.view = false;
           this.backgroundCharge = '';
           this.datos = res[0];
-          this.progressPlan = this.datos.trainingPlan.planProgress;
-          this.router.navigate(['/main/dashboard']);
+          if (this.newProgressPlan) {
+            this.progressPlan = this.newProgressPlan;
+            this.router.navigate(['/main/dashboard', this.newProgressPlan]);
+            this.datos.trainingPlan.courses[0].courseEnable = !this.datos.trainingPlan.courses[0].courseEnable;
+            this.datos.trainingPlan.courses[0].coursesProgress = '100%';
+            this.datos.trainingPlan.courses[1].courseEnable = !this.datos.trainingPlan.courses[1].courseEnable;
+            this.datos.trainingPlan.courses[0].technicalProfile.totalSkill++;
+            this.datos.trainingPlan.courses[0].technicalProfile.initTotalCourse--;
+          } else {
+            this.progressPlan = this.datos.trainingPlan.planProgress;
+            this.router.navigate(['/main/dashboard']);
+          }
         }, 1000);
       }
     })
