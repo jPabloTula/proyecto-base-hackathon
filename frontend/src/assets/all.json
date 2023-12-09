@@ -64,13 +64,13 @@
         }
       ]
     },
-    "trainungPlan": {
-      "planProgress": "70%",
+    "trainingPlan": {
+      "planProgress": "30%",
       "courses": [
         {
           "coursesId": "1",
           "name": "Angular desde 0",
-          "coursesProgress": "70%",
+          "coursesProgress": "85%",
           "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
           "sections": [
             {
@@ -287,13 +287,13 @@
         }
       ]
     },
-    "trainungPlan": {
+    "trainingPlan": {
       "planProgress": "70%",
       "courses": [
         {
           "coursesId": "1",
           "name": "Angular desde 0",
-          "coursesProgress": "70%",
+          "coursesProgress": "90%",
           "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
           "sections": [
             {
