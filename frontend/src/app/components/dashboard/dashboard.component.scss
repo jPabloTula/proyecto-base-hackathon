@@ -11,3 +11,20 @@ h3,h4,h5,h6,li{
     background-color: #000;
     border-radius: 10px;
 }
+
+.name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seniority {
+    font-size: 20px;
+    background: rgb(4,238,229);
+    background: linear-gradient(69deg, rgba(4,238,229,1) 0%, rgba(186,254,19,1) 100%);
+    color: black;
+}
+
+.courses-list {
+    margin-top: 50px !important;
+}
