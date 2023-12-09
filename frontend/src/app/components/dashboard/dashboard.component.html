@@ -1,105 +1,109 @@
-<div class="container" *ngIf="datos">
-    <div class="row">
-        <div class="col-md-6 col-sm-12">
-            <div class="container justify-content-center">
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="{{datos.profileImg}}" class="img-fluid rounded-circle" alt="Descripción de la imagen">
+<section [ngClass]="[view ? 'vh-85' + ' backgroundCharge' : 'vh-85 ']">
+    <div class="container" *ngIf="datos">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="container justify-content-center">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="{{datos.profileImg}}" class="img-fluid rounded-circle" alt="Descripción de la imagen">
+                        </div>
+                        <div class="col-md-9 name mb-3">
+                            <h3>{{datos.Name + ' ' + datos.surname}}</h3>
+                            <span class="badge badge-pill badge-primary seniority">{{'Seniority '+datos.seniority}}</span>
+                        </div>
                     </div>
-                    <div class="col-md-9 name">
-                        <h3>{{datos.Name + ' ' + datos.surname}}</h3>
-                        <span class="badge badge-pill badge-primary seniority">{{'Seniority '+datos.seniority}}</span>
+                </div>
+                <div class="container justify-content-center">
+                    <div class="row justify-content-between">
+                        <div class="container-courses rounded col-md-5 col-sm-12 mb-3 text-center">
+                            <div class="container-icon mb-3">
+                                <i class="icon-skill bi bi-trophy-fill display-5 mb-2" style="color: white;"></i>
+                            </div>
+                            <h5>Completed Skills</h5>
+                            <h5>{{datos.technicalProfile.totalSkill}}</h5>
+                        </div>
+                        <div class="container-courses rounded col-md-5 col-sm-12 mb-3 text-center">
+                            <div class="container-icon mb-3">
+                                <i class="icon-skill bi bi-hourglass-bottom display-5" style="color: white;"></i>
+                            </div>
+                            <h5>Skills in Progress</h5>
+                            <h5>{{datos.trainingPlan.initTotalCourse}}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4">
+                    <div class="row">
+                        <h4>Data Bases skills</h4>
+                        <div *ngFor="let item of datos.technicalProfile.databases">
+                            <li>{{item.databaseName}}</li>
+                        </div>
+                        <h4 class="mt-3">Frameworks skills</h4>
+                        <div *ngFor="let item of datos.technicalProfile.frameworks">
+                            <li>{{item.frameworkName}}</li>
+                        </div>
+                        <h4 class="mt-3">Programing Language skills</h4>
+                        <div *ngFor="let item of datos.technicalProfile.programingLanguage">
+                            <li>{{item.languageName}}</li>
+                        </div>
+                        <h4 class="mt-3">Tools</h4>
+                        <div *ngFor="let item of datos.technicalProfile.tools">
+                            <li>{{item.toolName}}</li>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container justify-content-center">
-                <div class="row justify-content-between">
-                    <div class="container-courses rounded col-md-5 col-sm-12 mb-3 text-center">
-                        <div class="container-icon mb-3">
-                            <i class="icon-skill bi bi-trophy-fill display-5 mb-2" style="color: white;"></i>
-                        </div>
-                        <h5>Completed Skills</h5>
-                        <h5>11</h5>
-                    </div>
-                    <div class="container-courses rounded col-md-5 col-sm-12 mb-3 text-center">
-                        <div class="container-icon mb-3">
-                            <i class="icon-skill bi bi-hourglass-bottom display-5" style="color: white;"></i>
-                        </div>
-                        <h5>Skills in Progress</h5>
-                        <h5>1</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <h4>Data Bases skills</h4>
-                    <div *ngFor="let item of datos.technicalProfile.databases">
-                        <li>{{item.databaseName}}</li>
-                    </div>
-                    <h4 class="mt-3">Frameworks skills</h4>
-                    <div *ngFor="let item of datos.technicalProfile.frameworks">
-                        <li>{{item.frameworkName}}</li>
-                    </div>
-                    <h4 class="mt-3">Programing Language skills</h4>
-                    <div *ngFor="let item of datos.technicalProfile.programingLanguage">
-                        <li>{{item.languageName}}</li>
-                    </div>
-                    <h4 class="mt-3">Tools</h4>
-                    <div *ngFor="let item of datos.technicalProfile.tools">
-                        <li>{{item.toolName}}</li>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <h3 >Progress to the next seniotiry</h3>
-            <div class="container-courses rounded">
-                <div class="row">
-                    <div class="col-md-2 col-sm-12 d-flex align-items-center">
-                        <div class="container-icon mb-3">
-                            <i class="icon-skill bi bi-hourglass-bottom display-5" style="color: white;"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-10 col-sm-12">
-                        <div class="d-flex justify-content-between mt-2">
-                            <h6>Percentage to finish</h6>
-                            <h6 class="justify-content-end">{{newProgressPlan ? '50%' : progressPlan}}</h6>
-                        </div>
-                        <div class="progress mb-3">
-                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                aria-valuemax="80" [style.width]="newProgressPlan ? '50%' : progressPlan">
+            <div class="col-md-6 col-sm-12 mt-4">
+                <h3 >{{'Progress to '+ datos.trainingPlan.nextSeniority}}</h3>
+                <div class="container-courses rounded">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 d-flex align-items-center">
+                            <div class="container-icon mb-3">
+                                <i class="icon-skill bi bi-hourglass-bottom display-5" style="color: white;"></i>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-list">
-                <h3>Course Results</h3>
-                <div class="container-courses rounded">
-                    <div *ngFor="let item of datos.trainingPlan.courses" class="row align-items-center justify-content-between mb-2">
-                        <div class="col-md-2 col-sm-12">
-                            <img src="{{item.icon}}" class="img-fluid rounded-circle" alt="Descripción de la imagen" style="width: 50px; height: 50px;">
-                        </div>
-                        <div class="col-md-8 col-sm-12">
+                        <div class="col-md-10 col-sm-12">
                             <div class="d-flex justify-content-between mt-2">
-                                <h6 class="ml-3">{{item.name}}</h6>
-                                <h6 class="justify-content-end">{{newProgressPlan ? '100%' : item.coursesProgress}}</h6>
+                                <h6>Percentage to finish</h6>
+                                <h6 class="justify-content-end">{{progressPlan}}</h6>
                             </div>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                    aria-valuemax="80" [style.width]="newProgressPlan ? '100%' : item.coursesProgress">
+                                    aria-valuemax="80" [style.width]="progressPlan">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-12">
-                            <button type="button" class="btn btn-primary" (click)="goCouse()">View</button>
+                    </div>
+                </div>
+                <div class="courses-list">
+                    <h3>Course Results</h3>
+                    <div class="container-courses rounded">
+                        <div *ngFor="let item of datos.trainingPlan.courses" class="row align-items-center justify-content-between mb-2">
+                            <div class="col-md-2 col-sm-12">
+                                <img src="{{item.icon}}" class="img-fluid rounded-circle" alt="Descripción de la imagen" style="width: 50px; height: 50px;">
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="ml-3">{{item.name}}</h6>
+                                    <h6 class="justify-content-end">{{item.coursesProgress}}</h6>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="80" [style.width]="item.coursesProgress">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-12">
+                                <button type="button" class="btn btn-primary" [ngClass]="!item.courseEnable ? 'btn-warning' : 'btn-primary'" (click)="goCouse()" [disabled]="!item.courseEnable">{{!item.courseEnable ? 'Locked' : 'View'}}</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-           
-            
         </div>
+    </div>
+</section>
+<div class="spinenerCharge" *ngIf="view">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
 </div>

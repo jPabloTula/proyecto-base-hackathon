@@ -14,6 +14,9 @@ export class DashboardComponent implements OnInit {
   progressCourse: any;
   newProgressPlan: any;
 
+  view: boolean = false;
+  backgroundCharge: string = '';
+
   constructor(
     private dataService: DataService,
     private router: Router,
@@ -32,11 +35,17 @@ export class DashboardComponent implements OnInit {
   }
 
   getDataFromJson() {
+    this.view = true;
+    this.backgroundCharge = 'backgroundCharge';
     this.dataService.getData().subscribe({
       next: res => {
-        console.log('Datos: ', res);
-        this.datos = res[0];
-        this.progressPlan = this.datos.trainingPlan.planProgress;
+        setTimeout(() => {
+          this.view = false;
+          this.backgroundCharge = '';
+          this.datos = res[0];
+          this.progressPlan = this.datos.trainingPlan.planProgress;
+          this.router.navigate(['/main/dashboard']);
+        }, 1000);
       }
     })
   }
