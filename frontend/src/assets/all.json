@@ -7,7 +7,7 @@
     "password": "35554829",
     "Name": "Martin",
     "surname": "Gutierrez",
-    "seniority": "Training",
+    "seniority": "Junior",
     "legajo": 1,
     "insignia": "{{path}}",
     "technicalProfile": {
@@ -66,6 +66,7 @@
     },
     "trainingPlan": {
       "planProgress": "30%",
+      "nextSeniority": "Semi Senior",
       "courses": [
         {
           "coursesId": "1",
@@ -220,6 +221,15 @@
                 
   
               ]
+            }
+          ]
+        }, {
+          "coursesId": "2",
+          "name": "Node.js",
+          "coursesProgress": "0%",
+          "icon": "https://midu.dev/images/tags/node.png",
+          "sections": [
+            {
             }
           ]
         }
