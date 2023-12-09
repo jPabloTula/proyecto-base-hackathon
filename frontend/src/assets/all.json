@@ -64,164 +64,168 @@
         }
       ]
     },
-    "courses": [
-      {
-        "coursesId": "1",
-        "name": "Angular desde 0",
-        "coursesProgress": "70%",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
-        "sections": [
-          {
-            "name": "introduccion a Angular",
-            "test": [
-              {
-                "content": "En este episodio, vamos a introducirnos en el mundo de Angular, un framework de desarrollo web creado por Google.\n Angular es una herramienta muy poderosa que nos permite construir aplicaciones web de una manera más eficiente y estructurada. Empecemos por entender qué es Angular y cómo funciona.\n Angular es un framework de código abierto que utiliza el patrón de diseño Modelo-Vista-Controlador (MVC) para desarrollar aplicaciones web de una forma modular y escalable. Esto significa que podemos dividir nuestra aplicación en componentes reutilizables, lo cual nos permite mantener un código más limpio y fácil de mantener. \n Una de las características más destacadas de Angular es su sistema de templates. Los templates en Angular son archivos HTML mejorados, que nos permiten incluir lógica y datos dinámicos en nuestras vistas. Esto nos ayuda a construir interfaces de usuario más interactivas y dinámicas.\n Para trabajar con Angular, necesitaremos tener instalado Node.js, que es un entorno de ejecución de JavaScript en el servidor. También utilizaremos el gestor de paquetes npm, que nos permitirá instalar las dependencias necesarias para nuestro proyecto. \n Una vez que tenemos Node.js y npm instalados, podemos crear un nuevo proyecto de Angular utilizando el comando `ng new`. Esto nos generará una estructura de carpetas y archivos base para nuestro proyecto.\n Una vez que nuestro proyecto está creado, podemos empezar a desarrollar nuestros componentes. Los componentes son la pieza fundamental de una aplicación Angular, ya que representan una parte de la interfaz de usuario y contienen su propia lógica y estilos. Podemos pensar en ellos como bloques de construcción reutilizables. \n Además de los componentes, Angular también nos ofrece la posibilidad de trabajar con servicios y dependency injection. Los servicios son clases que nos permiten encapsular la lógica de negocio de nuestra aplicación y compartir datos entre componentes. Por otro lado, la dependency injection nos permite inyectar estas dependencias en nuestros componentes de una manera sencilla y transparente.\n Otra característica importante de Angular es su sistema de routing y navegación. Esto nos permite definir rutas para nuestras páginas y navegar entre ellas de forma fluida. Esto es especialmente útil cuando queremos construir aplicaciones de una sola página (SPA) o cuando necesitamos navegar entre diferentes vistas dentro de nuestra aplicación.\n En resumen, Angular es un framework de desarrollo web muy poderoso que nos permite construir aplicaciones web de una manera más eficiente y estructurada. En este episodio, hemos visto una introducción a Angular, hablando sobre los componentes y templates, servicios y dependency injection, y el sistema de routing y navegación. En los próximos episodios, profundizaremos en cada uno de estos temas y veremos ejemplos prácticos de su uso. ¡Hasta la próxima!",
-                "question": "¿Qué característica de Angular nos permite definir rutas para nuestras páginas y facilita la navegación entre ellas de manera fluida?",
-                "type": 2,
-                "answerId": 4,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Dependency Injection"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Sistema de Templates"
-                  },
-                  {
-                    "id": 3,
-                    "name": "Servicios"
-                  },
-                  {
-                    "id": 4,
-                    "name": "Routing y Navegación"
-                  }
-                ]
-              },
-              {
-                "content":"En este episodio, vamos a introducirnos en el maravilloso mundo de Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es una herramienta creada por Google que nos permite construir aplicaciones web modernas y escalables de manera eficiente. ¿Están listos? ¡Comencemos! Antes de adentrarnos en los detalles técnicos de Angular, es importante entender algunas nociones básicas. Angular es un framework de desarrollo web de código abierto basado en TypeScript, un superset de JavaScript. Esto significa que Angular utiliza la sintaxis de JavaScript, pero añade características adicionales que nos ayudan a escribir código más limpio y legible. Uno de los conceptos fundamentales en Angular son los componentes. Los componentes son las unidades básicas de construcción en Angular, y nos permiten dividir nuestra aplicación en partes más pequeñas y manejables. Cada componente tiene su propio HTML, CSS y código TypeScript, lo que nos permite trabajar de manera modular y reutilizar componentes en diferentes partes de nuestra aplicación. Además de los componentes, Angular también nos proporciona un sistema de templates muy poderoso. Los templates nos permiten definir la estructura y el contenido de nuestras páginas web de una manera declarativa. Podemos combinar HTML estático con expresiones dinámicas utilizando la sintaxis de Angular, lo que nos permite mostrar información actualizada en nuestra aplicación de forma sencilla. Para comunicarnos con nuestros componentes y compartir datos entre ellos, Angular utiliza el concepto de servicios y la inyección de dependencias. Los servicios son clases que encapsulan la lógica de negocio de nuestra aplicación y nos permiten compartir datos y funcionalidades entre diferentes componentes. La inyección de dependencias es un patrón de diseño que nos permite instanciar y utilizar servicios de manera eficiente y flexible. Por último, pero no menos importante, vamos a hablar sobre el routing y la navegación en Angular. El routing nos permite definir las diferentes rutas o URL de nuestra aplicación y asociarlas a componentes específicos. De esta manera, podemos navegar entre diferentes páginas o vistas de nuestra aplicación de manera sencilla y mantener una experiencia de usuario fluida. En resumen, en este episodio hemos introducido los conceptos básicos de Angular: los componentes, los templates, los servicios y la inyección de dependencias, y el routing y la navegación. Estos conceptos son fundamentales para comprender y utilizar Angular de manera efectiva. En los próximos episodios, nos adentraremos en cada uno de estos temas en detalle, para que puedas convertirte en un experto en Angular. ¡Hasta la próxima!","question": "¿Cuál de los siguientes conceptos es fundamental en Angular para dividir una aplicación en partes más pequeñas y manejables?",
-                "type": 2,
-                "answerId": 4,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Templates"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Servicios"
-                  },
-                  {
-                    "id": 3,
-                    "name": "Inyección de dependencias"
-                  },
-                  {
-                    "id": 4,
-                    "name": "Componentes"
-                  }
-                ]
-              },
-              {
-                "content": "Bienvenidos a este episodio del micropodcast sobre Angular. En este programa, daremos una introducción a Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es un framework de código abierto desarrollado por Google que permite crear aplicaciones web de una manera rápida y eficiente. A lo largo de este episodio, exploraremos los conceptos básicos de Angular, incluyendo componentes, templates, servicios, dependency injection, routing y navegación.",
-                "question": "¿Quién desarrolló Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web?",
-                "type": 2,
-                "answerId": 3,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Facebook"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Microsoft"
-                  },
-                  {
-                    "id": 3,
-                    "name": "Google"
-                  },
-                  {
-                    "id": 4,
-                    "name": "Apple"
-                  }
-                ]
-              }
-            ]
-          }
-          ,{
-            "name": "Componentes y Templates",
-            "test": [
-              {
-                "content": "En esta ocasión, nos enfocaremos en uno de los conceptos fundamentales de este framework: los componentes y los templates. Los componentes son la base de cualquier aplicación Angular. Podemos considerarlos como bloques de construcción reutilizables que contienen tanto la lógica como la interfaz de usuario de una parte específica de la aplicación. Cada componente tiene su propio archivo TypeScript donde se define su lógica y un archivo HTML donde se define su estructura visual. El template, por su parte, es la parte visual de un componente. Se define en un archivo HTML separado y puede incluir enlaces a propiedades y métodos del componente. En el template, podemos utilizar directivas estructurales como *ngIf y *ngFor para controlar la visualización de elementos y repetir bloques de código según nuestras necesidades. Veamos un ejemplo para entender mejor cómo funcionan los componentes y los templates en Angular: Supongamos que estamos construyendo una aplicación de lista de tareas. Podríamos crear un componente llamado 'TaskListComponent' que se encargue de mostrar todas las tareas pendientes. En el archivo TypeScript de este componente, definiríamos una propiedad llamada 'tasks' que sería un arreglo con todas las tareas. En el archivo HTML, usaríamos un *ngFor para iterar sobre este arreglo y mostrar cada tarea en una lista. Otro aspecto importante de los templates en Angular es la posibilidad de utilizar directivas de atributos, como *ngStyle y *ngClass, para aplicar estilos dinámicamente según las condiciones o propiedades del componente. En resumen, los componentes y los templates son los pilares fundamentales de Angular. Los componentes nos permiten organizar nuestra aplicación en bloques reutilizables y los templates definen la interfaz de usuario de cada componente. Los templates también nos brindan la posibilidad de utilizar directivas estructurales y de atributos para controlar la visualización y los estilos de nuestros componentes. Espero que este episodio haya sido útil para comprender mejor los componentes y los templates en Angular. En nuestro próximo episodio, hablaremos sobre otros conceptos importantes de este framework. ¡Hasta la próxima!",
-                "question": "Los templates en Angular se definen en archivos TypeScript separados, y en ellos se incluyen las propiedades y métodos del componente, así como las directivas estructurales como *ngIf y *ngFor.",
-                "type": 1,
-                "answerId": 2,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Verdadero"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Falso"
-                  }
-                  
-                ]
-              }, {
-                "content": "En este episodio, hablaremos sobre los componentes y templates en Angular. Angular es un framework de desarrollo de aplicaciones web desarrollado por Google. Permite crear aplicaciones web de una sola página de manera eficiente y estructurada. Una de las características clave de Angular es su enfoque en la creación de componentes reutilizables. Los componentes en Angular son la unidad básica de construcción de una aplicación. Cada componente está compuesto por un template, que define la estructura visual de la página, y una clase, que contiene la lógica de la aplicación. El template de un componente en Angular utiliza HTML y puede incluir directivas, que son instrucciones que indican cómo se debe renderizar el contenido. Por ejemplo, la directiva *ngFor se utiliza para repetir un elemento HTML y mostrar una lista de datos. El template también puede contener interpolaciones, que permiten mostrar valores dinámicos en la página. La clase de un componente en Angular contiene propiedades y métodos que definen su comportamiento. Por ejemplo, una propiedad puede almacenar el valor de un input del usuario, y un método puede realizar cálculos o llamar a servicios externos. La clase también puede utilizar decoradores para configurar metadatos del componente, como el selector y las dependencias. La comunicación entre componentes en Angular se realiza a través de inputs y outputs. Los inputs permiten pasar datos de un componente padre a un componente hijo, mientras que los outputs permiten emitir eventos desde un componente hijo hacia un componente padre. Esto facilita la reutilización de componentes en diferentes partes de la aplicación. En resumen, los componentes y templates son elementos fundamentales en Angular. Los componentes definen la estructura y el comportamiento de una aplicación, mientras que los templates permiten renderizar el contenido visual. La combinación de componentes reutilizables y comunicación entre ellos hace que Angular sea un framework potente y eficiente para el desarrollo de aplicaciones web.",
-                "question": "En Angular, los inputs se utilizan para emitir eventos desde un componente hijo hacia un componente padre.",
-                "type": 1,
-                "answerId": 2,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Verdadero"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Falso"
-                  }
-                  
-                ]
-              }, {
-                "content": "En este episodio hablaremos sobre uno de los conceptos fundamentales de Angular: los componentes y los templates. Los componentes son los bloques de construcción principales de una aplicación Angular. Son clases que contienen la lógica y los datos de una parte de la interfaz de usuario, y están asociados a un template que define cómo se visualiza esa interfaz. Los templates son archivos HTML que contienen marcadores especiales, llamados directivas, que indican cómo mostrar los datos y cómo interactuar con ellos. Estas directivas se utilizan para enlazar datos, manipular el DOM y controlar eventos. Veamos un ejemplo para entenderlo mejor. Supongamos que tenemos una aplicación que muestra una lista de tareas. Podríamos crear un componente llamado 'TaskListComponent' que se encargue de mostrar esta lista en la interfaz de usuario. En el archivo HTML del template, podríamos utilizar una directiva de repetición, como *ngFor, para mostrar cada tarea en la lista. Además, podríamos utilizar directivas de enlace de datos, como [ngModel], para permitir que el usuario edite el título de una tarea. Los componentes y los templates se comunican entre sí a través de propiedades y eventos. Los componentes pueden tener propiedades que se pueden enlazar a los elementos del template, lo que permite mostrar y actualizar datos en la interfaz de usuario. Además, los componentes pueden emitir eventos que pueden ser capturados y manejados por otros componentes o servicios. En Angular, también es posible crear componentes reutilizables, conocidos como componentes de biblioteca. Estos componentes se pueden empaquetar y distribuir como bibliotecas para ser utilizados en otras aplicaciones Angular. Esto permite compartir funcionalidades comunes entre diferentes proyectos y promueve la reutilización de código. En resumen, los componentes y los templates son elementos clave en el desarrollo de aplicaciones Angular. Los componentes contienen la lógica y los datos de una parte de la interfaz de usuario, mientras que los templates definen cómo se visualiza esa interfaz. Los componentes y los templates se comunican entre sí a través de propiedades y eventos, lo que permite la interacción y la actualización de datos en la interfaz de usuario. Además, es posible crear componentes reutilizables, conocidos como componentes de biblioteca, que pueden ser empaquetados y distribuidos para su uso en otras aplicaciones Angular.",
-                "question": "En Angular, los componentes y los templates se comunican exclusivamente a través de eventos, sin posibilidad de enlazar propiedades entre ellos.",
-                "type": 1,
-                "answerId": 2,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Verdadero"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Falso"
-                  }
-                  
-                ]
-              },  {
-                "content": "Bienvenidos a este episodio sobre Angular, en esta ocasión hablaremos sobre los componentes y el template en Angular. Angular es un framework de desarrollo de aplicaciones web de código abierto y mantenido por Google. Es ampliamente utilizado en la industria debido a su facilidad de uso y a las ventajas que ofrece para el desarrollo de aplicaciones web modernas. Uno de los conceptos fundamentales en Angular son los componentes. Un componente en Angular es una pieza de código reutilizable que encapsula la lógica de presentación y el comportamiento de una parte específica de la interfaz de usuario. Los componentes en Angular se componen de tres partes principales: el template, la clase y los metadatos. El template define la estructura y el diseño de la parte visual del componente. Se utiliza HTML para definir la estructura y CSS para dar estilo al componente. La clase contiene la lógica y el comportamiento del componente. Se utiliza TypeScript para definir las propiedades y los métodos del componente. Los metadatos proporcionan información adicional sobre el componente, como su selector, sus estilos y sus dependencias. Los componentes en Angular se pueden anidar unos dentro de otros para crear jerarquías de componentes. Esto permite construir interfaces de usuario complejas y reutilizables. Por ejemplo, podemos tener un componente principal que contenga varios componentes secundarios, cada uno con su propio template y su propia lógica. Al usar componentes en Angular, podemos dividir nuestra aplicación en piezas más pequeñas y fáciles de mantener. Además, los componentes en Angular son altamente reutilizables. Esto significa que podemos usar un componente en múltiples lugares de nuestra aplicación sin tener que volver a escribir el código. Esto nos ayuda a reducir la duplicación de código y a mantener nuestro código más limpio y más fácil de mantener. Otra ventaja de los componentes en Angular es que son fáciles de probar. Podemos escribir pruebas unitarias para cada componente y asegurarnos de que funcione correctamente. Esto nos ayuda a detectar y solucionar errores antes de que lleguen a producción. En resumen, los componentes en Angular son una parte fundamental de la arquitectura de una aplicación. Nos permiten dividir nuestra aplicación en piezas más pequeñas y fáciles de mantener, reutilizar código y facilitar las pruebas. En el próximo episodio hablaremos sobre otros conceptos importantes en Angular. ¡Hasta la próxima!",
-                "question": "El template en Angular define la estructura visual de un componente utilizando TypeScript para la definición de propiedades y métodos.",
-                "type": 1,
-                "answerId": 2,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Verdadero"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Falso"
-                  }
-                  
-                ]
-              }
-              
-
-            ]
-          }
-        ]
-      }
-    ]
+    "trainungPlan": {
+      "planProgress": "70%",
+      "courses": [
+        {
+          "coursesId": "1",
+          "name": "Angular desde 0",
+          "coursesProgress": "70%",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
+          "sections": [
+            {
+              "name": "introduccion a Angular",
+              "test": [
+                {
+                  "content": "En este episodio, vamos a introducirnos en el mundo de Angular, un framework de desarrollo web creado por Google.\n Angular es una herramienta muy poderosa que nos permite construir aplicaciones web de una manera más eficiente y estructurada. Empecemos por entender qué es Angular y cómo funciona.\n Angular es un framework de código abierto que utiliza el patrón de diseño Modelo-Vista-Controlador (MVC) para desarrollar aplicaciones web de una forma modular y escalable. Esto significa que podemos dividir nuestra aplicación en componentes reutilizables, lo cual nos permite mantener un código más limpio y fácil de mantener. \n Una de las características más destacadas de Angular es su sistema de templates. Los templates en Angular son archivos HTML mejorados, que nos permiten incluir lógica y datos dinámicos en nuestras vistas. Esto nos ayuda a construir interfaces de usuario más interactivas y dinámicas.\n Para trabajar con Angular, necesitaremos tener instalado Node.js, que es un entorno de ejecución de JavaScript en el servidor. También utilizaremos el gestor de paquetes npm, que nos permitirá instalar las dependencias necesarias para nuestro proyecto. \n Una vez que tenemos Node.js y npm instalados, podemos crear un nuevo proyecto de Angular utilizando el comando `ng new`. Esto nos generará una estructura de carpetas y archivos base para nuestro proyecto.\n Una vez que nuestro proyecto está creado, podemos empezar a desarrollar nuestros componentes. Los componentes son la pieza fundamental de una aplicación Angular, ya que representan una parte de la interfaz de usuario y contienen su propia lógica y estilos. Podemos pensar en ellos como bloques de construcción reutilizables. \n Además de los componentes, Angular también nos ofrece la posibilidad de trabajar con servicios y dependency injection. Los servicios son clases que nos permiten encapsular la lógica de negocio de nuestra aplicación y compartir datos entre componentes. Por otro lado, la dependency injection nos permite inyectar estas dependencias en nuestros componentes de una manera sencilla y transparente.\n Otra característica importante de Angular es su sistema de routing y navegación. Esto nos permite definir rutas para nuestras páginas y navegar entre ellas de forma fluida. Esto es especialmente útil cuando queremos construir aplicaciones de una sola página (SPA) o cuando necesitamos navegar entre diferentes vistas dentro de nuestra aplicación.\n En resumen, Angular es un framework de desarrollo web muy poderoso que nos permite construir aplicaciones web de una manera más eficiente y estructurada. En este episodio, hemos visto una introducción a Angular, hablando sobre los componentes y templates, servicios y dependency injection, y el sistema de routing y navegación. En los próximos episodios, profundizaremos en cada uno de estos temas y veremos ejemplos prácticos de su uso. ¡Hasta la próxima!",
+                  "question": "¿Qué característica de Angular nos permite definir rutas para nuestras páginas y facilita la navegación entre ellas de manera fluida?",
+                  "type": 2,
+                  "answerId": 4,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Dependency Injection"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Sistema de Templates"
+                    },
+                    {
+                      "id": 3,
+                      "name": "Servicios"
+                    },
+                    {
+                      "id": 4,
+                      "name": "Routing y Navegación"
+                    }
+                  ]
+                },
+                {
+                  "content":"En este episodio, vamos a introducirnos en el maravilloso mundo de Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es una herramienta creada por Google que nos permite construir aplicaciones web modernas y escalables de manera eficiente. ¿Están listos? ¡Comencemos! Antes de adentrarnos en los detalles técnicos de Angular, es importante entender algunas nociones básicas. Angular es un framework de desarrollo web de código abierto basado en TypeScript, un superset de JavaScript. Esto significa que Angular utiliza la sintaxis de JavaScript, pero añade características adicionales que nos ayudan a escribir código más limpio y legible. Uno de los conceptos fundamentales en Angular son los componentes. Los componentes son las unidades básicas de construcción en Angular, y nos permiten dividir nuestra aplicación en partes más pequeñas y manejables. Cada componente tiene su propio HTML, CSS y código TypeScript, lo que nos permite trabajar de manera modular y reutilizar componentes en diferentes partes de nuestra aplicación. Además de los componentes, Angular también nos proporciona un sistema de templates muy poderoso. Los templates nos permiten definir la estructura y el contenido de nuestras páginas web de una manera declarativa. Podemos combinar HTML estático con expresiones dinámicas utilizando la sintaxis de Angular, lo que nos permite mostrar información actualizada en nuestra aplicación de forma sencilla. Para comunicarnos con nuestros componentes y compartir datos entre ellos, Angular utiliza el concepto de servicios y la inyección de dependencias. Los servicios son clases que encapsulan la lógica de negocio de nuestra aplicación y nos permiten compartir datos y funcionalidades entre diferentes componentes. La inyección de dependencias es un patrón de diseño que nos permite instanciar y utilizar servicios de manera eficiente y flexible. Por último, pero no menos importante, vamos a hablar sobre el routing y la navegación en Angular. El routing nos permite definir las diferentes rutas o URL de nuestra aplicación y asociarlas a componentes específicos. De esta manera, podemos navegar entre diferentes páginas o vistas de nuestra aplicación de manera sencilla y mantener una experiencia de usuario fluida. En resumen, en este episodio hemos introducido los conceptos básicos de Angular: los componentes, los templates, los servicios y la inyección de dependencias, y el routing y la navegación. Estos conceptos son fundamentales para comprender y utilizar Angular de manera efectiva. En los próximos episodios, nos adentraremos en cada uno de estos temas en detalle, para que puedas convertirte en un experto en Angular. ¡Hasta la próxima!","question": "¿Cuál de los siguientes conceptos es fundamental en Angular para dividir una aplicación en partes más pequeñas y manejables?",
+                  "type": 2,
+                  "answerId": 4,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Templates"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Servicios"
+                    },
+                    {
+                      "id": 3,
+                      "name": "Inyección de dependencias"
+                    },
+                    {
+                      "id": 4,
+                      "name": "Componentes"
+                    }
+                  ]
+                },
+                {
+                  "content": "Bienvenidos a este episodio del micropodcast sobre Angular. En este programa, daremos una introducción a Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es un framework de código abierto desarrollado por Google que permite crear aplicaciones web de una manera rápida y eficiente. A lo largo de este episodio, exploraremos los conceptos básicos de Angular, incluyendo componentes, templates, servicios, dependency injection, routing y navegación.",
+                  "question": "¿Quién desarrolló Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web?",
+                  "type": 2,
+                  "answerId": 3,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Facebook"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Microsoft"
+                    },
+                    {
+                      "id": 3,
+                      "name": "Google"
+                    },
+                    {
+                      "id": 4,
+                      "name": "Apple"
+                    }
+                  ]
+                }
+              ]
+            }
+            ,{
+              "name": "Componentes y Templates",
+              "test": [
+                {
+                  "content": "En esta ocasión, nos enfocaremos en uno de los conceptos fundamentales de este framework: los componentes y los templates. Los componentes son la base de cualquier aplicación Angular. Podemos considerarlos como bloques de construcción reutilizables que contienen tanto la lógica como la interfaz de usuario de una parte específica de la aplicación. Cada componente tiene su propio archivo TypeScript donde se define su lógica y un archivo HTML donde se define su estructura visual. El template, por su parte, es la parte visual de un componente. Se define en un archivo HTML separado y puede incluir enlaces a propiedades y métodos del componente. En el template, podemos utilizar directivas estructurales como *ngIf y *ngFor para controlar la visualización de elementos y repetir bloques de código según nuestras necesidades. Veamos un ejemplo para entender mejor cómo funcionan los componentes y los templates en Angular: Supongamos que estamos construyendo una aplicación de lista de tareas. Podríamos crear un componente llamado 'TaskListComponent' que se encargue de mostrar todas las tareas pendientes. En el archivo TypeScript de este componente, definiríamos una propiedad llamada 'tasks' que sería un arreglo con todas las tareas. En el archivo HTML, usaríamos un *ngFor para iterar sobre este arreglo y mostrar cada tarea en una lista. Otro aspecto importante de los templates en Angular es la posibilidad de utilizar directivas de atributos, como *ngStyle y *ngClass, para aplicar estilos dinámicamente según las condiciones o propiedades del componente. En resumen, los componentes y los templates son los pilares fundamentales de Angular. Los componentes nos permiten organizar nuestra aplicación en bloques reutilizables y los templates definen la interfaz de usuario de cada componente. Los templates también nos brindan la posibilidad de utilizar directivas estructurales y de atributos para controlar la visualización y los estilos de nuestros componentes. Espero que este episodio haya sido útil para comprender mejor los componentes y los templates en Angular. En nuestro próximo episodio, hablaremos sobre otros conceptos importantes de este framework. ¡Hasta la próxima!",
+                  "question": "Los templates en Angular se definen en archivos TypeScript separados, y en ellos se incluyen las propiedades y métodos del componente, así como las directivas estructurales como *ngIf y *ngFor.",
+                  "type": 1,
+                  "answerId": 2,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Verdadero"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Falso"
+                    }
+                    
+                  ]
+                }, {
+                  "content": "En este episodio, hablaremos sobre los componentes y templates en Angular. Angular es un framework de desarrollo de aplicaciones web desarrollado por Google. Permite crear aplicaciones web de una sola página de manera eficiente y estructurada. Una de las características clave de Angular es su enfoque en la creación de componentes reutilizables. Los componentes en Angular son la unidad básica de construcción de una aplicación. Cada componente está compuesto por un template, que define la estructura visual de la página, y una clase, que contiene la lógica de la aplicación. El template de un componente en Angular utiliza HTML y puede incluir directivas, que son instrucciones que indican cómo se debe renderizar el contenido. Por ejemplo, la directiva *ngFor se utiliza para repetir un elemento HTML y mostrar una lista de datos. El template también puede contener interpolaciones, que permiten mostrar valores dinámicos en la página. La clase de un componente en Angular contiene propiedades y métodos que definen su comportamiento. Por ejemplo, una propiedad puede almacenar el valor de un input del usuario, y un método puede realizar cálculos o llamar a servicios externos. La clase también puede utilizar decoradores para configurar metadatos del componente, como el selector y las dependencias. La comunicación entre componentes en Angular se realiza a través de inputs y outputs. Los inputs permiten pasar datos de un componente padre a un componente hijo, mientras que los outputs permiten emitir eventos desde un componente hijo hacia un componente padre. Esto facilita la reutilización de componentes en diferentes partes de la aplicación. En resumen, los componentes y templates son elementos fundamentales en Angular. Los componentes definen la estructura y el comportamiento de una aplicación, mientras que los templates permiten renderizar el contenido visual. La combinación de componentes reutilizables y comunicación entre ellos hace que Angular sea un framework potente y eficiente para el desarrollo de aplicaciones web.",
+                  "question": "En Angular, los inputs se utilizan para emitir eventos desde un componente hijo hacia un componente padre.",
+                  "type": 1,
+                  "answerId": 2,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Verdadero"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Falso"
+                    }
+                    
+                  ]
+                }, {
+                  "content": "En este episodio hablaremos sobre uno de los conceptos fundamentales de Angular: los componentes y los templates. Los componentes son los bloques de construcción principales de una aplicación Angular. Son clases que contienen la lógica y los datos de una parte de la interfaz de usuario, y están asociados a un template que define cómo se visualiza esa interfaz. Los templates son archivos HTML que contienen marcadores especiales, llamados directivas, que indican cómo mostrar los datos y cómo interactuar con ellos. Estas directivas se utilizan para enlazar datos, manipular el DOM y controlar eventos. Veamos un ejemplo para entenderlo mejor. Supongamos que tenemos una aplicación que muestra una lista de tareas. Podríamos crear un componente llamado 'TaskListComponent' que se encargue de mostrar esta lista en la interfaz de usuario. En el archivo HTML del template, podríamos utilizar una directiva de repetición, como *ngFor, para mostrar cada tarea en la lista. Además, podríamos utilizar directivas de enlace de datos, como [ngModel], para permitir que el usuario edite el título de una tarea. Los componentes y los templates se comunican entre sí a través de propiedades y eventos. Los componentes pueden tener propiedades que se pueden enlazar a los elementos del template, lo que permite mostrar y actualizar datos en la interfaz de usuario. Además, los componentes pueden emitir eventos que pueden ser capturados y manejados por otros componentes o servicios. En Angular, también es posible crear componentes reutilizables, conocidos como componentes de biblioteca. Estos componentes se pueden empaquetar y distribuir como bibliotecas para ser utilizados en otras aplicaciones Angular. Esto permite compartir funcionalidades comunes entre diferentes proyectos y promueve la reutilización de código. En resumen, los componentes y los templates son elementos clave en el desarrollo de aplicaciones Angular. Los componentes contienen la lógica y los datos de una parte de la interfaz de usuario, mientras que los templates definen cómo se visualiza esa interfaz. Los componentes y los templates se comunican entre sí a través de propiedades y eventos, lo que permite la interacción y la actualización de datos en la interfaz de usuario. Además, es posible crear componentes reutilizables, conocidos como componentes de biblioteca, que pueden ser empaquetados y distribuidos para su uso en otras aplicaciones Angular.",
+                  "question": "En Angular, los componentes y los templates se comunican exclusivamente a través de eventos, sin posibilidad de enlazar propiedades entre ellos.",
+                  "type": 1,
+                  "answerId": 2,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Verdadero"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Falso"
+                    }
+                    
+                  ]
+                },  {
+                  "content": "Bienvenidos a este episodio sobre Angular, en esta ocasión hablaremos sobre los componentes y el template en Angular. Angular es un framework de desarrollo de aplicaciones web de código abierto y mantenido por Google. Es ampliamente utilizado en la industria debido a su facilidad de uso y a las ventajas que ofrece para el desarrollo de aplicaciones web modernas. Uno de los conceptos fundamentales en Angular son los componentes. Un componente en Angular es una pieza de código reutilizable que encapsula la lógica de presentación y el comportamiento de una parte específica de la interfaz de usuario. Los componentes en Angular se componen de tres partes principales: el template, la clase y los metadatos. El template define la estructura y el diseño de la parte visual del componente. Se utiliza HTML para definir la estructura y CSS para dar estilo al componente. La clase contiene la lógica y el comportamiento del componente. Se utiliza TypeScript para definir las propiedades y los métodos del componente. Los metadatos proporcionan información adicional sobre el componente, como su selector, sus estilos y sus dependencias. Los componentes en Angular se pueden anidar unos dentro de otros para crear jerarquías de componentes. Esto permite construir interfaces de usuario complejas y reutilizables. Por ejemplo, podemos tener un componente principal que contenga varios componentes secundarios, cada uno con su propio template y su propia lógica. Al usar componentes en Angular, podemos dividir nuestra aplicación en piezas más pequeñas y fáciles de mantener. Además, los componentes en Angular son altamente reutilizables. Esto significa que podemos usar un componente en múltiples lugares de nuestra aplicación sin tener que volver a escribir el código. Esto nos ayuda a reducir la duplicación de código y a mantener nuestro código más limpio y más fácil de mantener. Otra ventaja de los componentes en Angular es que son fáciles de probar. Podemos escribir pruebas unitarias para cada componente y asegurarnos de que funcione correctamente. Esto nos ayuda a detectar y solucionar errores antes de que lleguen a producción. En resumen, los componentes en Angular son una parte fundamental de la arquitectura de una aplicación. Nos permiten dividir nuestra aplicación en piezas más pequeñas y fáciles de mantener, reutilizar código y facilitar las pruebas. En el próximo episodio hablaremos sobre otros conceptos importantes en Angular. ¡Hasta la próxima!",
+                  "question": "El template en Angular define la estructura visual de un componente utilizando TypeScript para la definición de propiedades y métodos.",
+                  "type": 1,
+                  "answerId": 2,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Verdadero"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Falso"
+                    }
+                    
+                  ]
+                }
+                
+  
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    
   },
   {
     "userId":2,
@@ -283,91 +287,95 @@
         }
       ]
     },
-    "courses": [
-      {
-        "coursesId": "1",
-        "name": "Angular desde 0",
-        "coursesProgress": "70%",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
-        "sections": [
-          {
-            "name": "micropodcast a Angular",
-            "test": [
-              {
-                "content": "En este episodio, vamos a introducirnos en el mundo de Angular, un framework de desarrollo web creado por Google.\n Angular es una herramienta muy poderosa que nos permite construir aplicaciones web de una manera más eficiente y estructurada. Empecemos por entender qué es Angular y cómo funciona.\n Angular es un framework de código abierto que utiliza el patrón de diseño Modelo-Vista-Controlador (MVC) para desarrollar aplicaciones web de una forma modular y escalable. Esto significa que podemos dividir nuestra aplicación en componentes reutilizables, lo cual nos permite mantener un código más limpio y fácil de mantener. \n Una de las características más destacadas de Angular es su sistema de templates. Los templates en Angular son archivos HTML mejorados, que nos permiten incluir lógica y datos dinámicos en nuestras vistas. Esto nos ayuda a construir interfaces de usuario más interactivas y dinámicas.\n Para trabajar con Angular, necesitaremos tener instalado Node.js, que es un entorno de ejecución de JavaScript en el servidor. También utilizaremos el gestor de paquetes npm, que nos permitirá instalar las dependencias necesarias para nuestro proyecto. \n Una vez que tenemos Node.js y npm instalados, podemos crear un nuevo proyecto de Angular utilizando el comando `ng new`. Esto nos generará una estructura de carpetas y archivos base para nuestro proyecto.\n Una vez que nuestro proyecto está creado, podemos empezar a desarrollar nuestros componentes. Los componentes son la pieza fundamental de una aplicación Angular, ya que representan una parte de la interfaz de usuario y contienen su propia lógica y estilos. Podemos pensar en ellos como bloques de construcción reutilizables. \n Además de los componentes, Angular también nos ofrece la posibilidad de trabajar con servicios y dependency injection. Los servicios son clases que nos permiten encapsular la lógica de negocio de nuestra aplicación y compartir datos entre componentes. Por otro lado, la dependency injection nos permite inyectar estas dependencias en nuestros componentes de una manera sencilla y transparente.\n Otra característica importante de Angular es su sistema de routing y navegación. Esto nos permite definir rutas para nuestras páginas y navegar entre ellas de forma fluida. Esto es especialmente útil cuando queremos construir aplicaciones de una sola página (SPA) o cuando necesitamos navegar entre diferentes vistas dentro de nuestra aplicación.\n En resumen, Angular es un framework de desarrollo web muy poderoso que nos permite construir aplicaciones web de una manera más eficiente y estructurada. En este episodio, hemos visto una introducción a Angular, hablando sobre los componentes y templates, servicios y dependency injection, y el sistema de routing y navegación. En los próximos episodios, profundizaremos en cada uno de estos temas y veremos ejemplos prácticos de su uso. ¡Hasta la próxima!",
-                "question": "¿Qué característica de Angular nos permite definir rutas para nuestras páginas y facilita la navegación entre ellas de manera fluida?",
-                "type": 2,
-                "answerId": 4,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Dependency Injection"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Sistema de Templates"
-                  },
-                  {
-                    "id": 3,
-                    "name": "Servicios"
-                  },
-                  {
-                    "id": 4,
-                    "name": "Routing y Navegación"
-                  }
-                ]
-              },
-              {
-                "content":"En este episodio, vamos a introducirnos en el maravilloso mundo de Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es una herramienta creada por Google que nos permite construir aplicaciones web modernas y escalables de manera eficiente. ¿Están listos? ¡Comencemos! Antes de adentrarnos en los detalles técnicos de Angular, es importante entender algunas nociones básicas. Angular es un framework de desarrollo web de código abierto basado en TypeScript, un superset de JavaScript. Esto significa que Angular utiliza la sintaxis de JavaScript, pero añade características adicionales que nos ayudan a escribir código más limpio y legible. Uno de los conceptos fundamentales en Angular son los componentes. Los componentes son las unidades básicas de construcción en Angular, y nos permiten dividir nuestra aplicación en partes más pequeñas y manejables. Cada componente tiene su propio HTML, CSS y código TypeScript, lo que nos permite trabajar de manera modular y reutilizar componentes en diferentes partes de nuestra aplicación. Además de los componentes, Angular también nos proporciona un sistema de templates muy poderoso. Los templates nos permiten definir la estructura y el contenido de nuestras páginas web de una manera declarativa. Podemos combinar HTML estático con expresiones dinámicas utilizando la sintaxis de Angular, lo que nos permite mostrar información actualizada en nuestra aplicación de forma sencilla. Para comunicarnos con nuestros componentes y compartir datos entre ellos, Angular utiliza el concepto de servicios y la inyección de dependencias. Los servicios son clases que encapsulan la lógica de negocio de nuestra aplicación y nos permiten compartir datos y funcionalidades entre diferentes componentes. La inyección de dependencias es un patrón de diseño que nos permite instanciar y utilizar servicios de manera eficiente y flexible. Por último, pero no menos importante, vamos a hablar sobre el routing y la navegación en Angular. El routing nos permite definir las diferentes rutas o URL de nuestra aplicación y asociarlas a componentes específicos. De esta manera, podemos navegar entre diferentes páginas o vistas de nuestra aplicación de manera sencilla y mantener una experiencia de usuario fluida. En resumen, en este episodio hemos introducido los conceptos básicos de Angular: los componentes, los templates, los servicios y la inyección de dependencias, y el routing y la navegación. Estos conceptos son fundamentales para comprender y utilizar Angular de manera efectiva. En los próximos episodios, nos adentraremos en cada uno de estos temas en detalle, para que puedas convertirte en un experto en Angular. ¡Hasta la próxima!","question": "¿Cuál de los siguientes conceptos es fundamental en Angular para dividir una aplicación en partes más pequeñas y manejables?",
-                "type": 2,
-                "answerId": 4,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Templates"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Servicios"
-                  },
-                  {
-                    "id": 3,
-                    "name": "Inyección de dependencias"
-                  },
-                  {
-                    "id": 4,
-                    "name": "Componentes"
-                  }
-                ]
-              },
-              {
-                "content": "Bienvenidos a este episodio del micropodcast sobre Angular. En este programa, daremos una introducción a Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es un framework de código abierto desarrollado por Google que permite crear aplicaciones web de una manera rápida y eficiente. A lo largo de este episodio, exploraremos los conceptos básicos de Angular, incluyendo componentes, templates, servicios, dependency injection, routing y navegación.",
-                "question": "¿Quién desarrolló Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web?",
-                "type": 2,
-                "answerId": 3,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "Facebook"
-                  },
-                  {
-                    "id": 2,
-                    "name": "Microsoft"
-                  },
-                  {
-                    "id": 3,
-                    "name": "Google"
-                  },
-                  {
-                    "id": 4,
-                    "name": "Apple"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "trainungPlan": {
+      "planProgress": "70%",
+      "courses": [
+        {
+          "coursesId": "1",
+          "name": "Angular desde 0",
+          "coursesProgress": "70%",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
+          "sections": [
+            {
+              "name": "micropodcast a Angular",
+              "test": [
+                {
+                  "content": "En este episodio, vamos a introducirnos en el mundo de Angular, un framework de desarrollo web creado por Google.\n Angular es una herramienta muy poderosa que nos permite construir aplicaciones web de una manera más eficiente y estructurada. Empecemos por entender qué es Angular y cómo funciona.\n Angular es un framework de código abierto que utiliza el patrón de diseño Modelo-Vista-Controlador (MVC) para desarrollar aplicaciones web de una forma modular y escalable. Esto significa que podemos dividir nuestra aplicación en componentes reutilizables, lo cual nos permite mantener un código más limpio y fácil de mantener. \n Una de las características más destacadas de Angular es su sistema de templates. Los templates en Angular son archivos HTML mejorados, que nos permiten incluir lógica y datos dinámicos en nuestras vistas. Esto nos ayuda a construir interfaces de usuario más interactivas y dinámicas.\n Para trabajar con Angular, necesitaremos tener instalado Node.js, que es un entorno de ejecución de JavaScript en el servidor. También utilizaremos el gestor de paquetes npm, que nos permitirá instalar las dependencias necesarias para nuestro proyecto. \n Una vez que tenemos Node.js y npm instalados, podemos crear un nuevo proyecto de Angular utilizando el comando `ng new`. Esto nos generará una estructura de carpetas y archivos base para nuestro proyecto.\n Una vez que nuestro proyecto está creado, podemos empezar a desarrollar nuestros componentes. Los componentes son la pieza fundamental de una aplicación Angular, ya que representan una parte de la interfaz de usuario y contienen su propia lógica y estilos. Podemos pensar en ellos como bloques de construcción reutilizables. \n Además de los componentes, Angular también nos ofrece la posibilidad de trabajar con servicios y dependency injection. Los servicios son clases que nos permiten encapsular la lógica de negocio de nuestra aplicación y compartir datos entre componentes. Por otro lado, la dependency injection nos permite inyectar estas dependencias en nuestros componentes de una manera sencilla y transparente.\n Otra característica importante de Angular es su sistema de routing y navegación. Esto nos permite definir rutas para nuestras páginas y navegar entre ellas de forma fluida. Esto es especialmente útil cuando queremos construir aplicaciones de una sola página (SPA) o cuando necesitamos navegar entre diferentes vistas dentro de nuestra aplicación.\n En resumen, Angular es un framework de desarrollo web muy poderoso que nos permite construir aplicaciones web de una manera más eficiente y estructurada. En este episodio, hemos visto una introducción a Angular, hablando sobre los componentes y templates, servicios y dependency injection, y el sistema de routing y navegación. En los próximos episodios, profundizaremos en cada uno de estos temas y veremos ejemplos prácticos de su uso. ¡Hasta la próxima!",
+                  "question": "¿Qué característica de Angular nos permite definir rutas para nuestras páginas y facilita la navegación entre ellas de manera fluida?",
+                  "type": 2,
+                  "answerId": 4,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Dependency Injection"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Sistema de Templates"
+                    },
+                    {
+                      "id": 3,
+                      "name": "Servicios"
+                    },
+                    {
+                      "id": 4,
+                      "name": "Routing y Navegación"
+                    }
+                  ]
+                },
+                {
+                  "content":"En este episodio, vamos a introducirnos en el maravilloso mundo de Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es una herramienta creada por Google que nos permite construir aplicaciones web modernas y escalables de manera eficiente. ¿Están listos? ¡Comencemos! Antes de adentrarnos en los detalles técnicos de Angular, es importante entender algunas nociones básicas. Angular es un framework de desarrollo web de código abierto basado en TypeScript, un superset de JavaScript. Esto significa que Angular utiliza la sintaxis de JavaScript, pero añade características adicionales que nos ayudan a escribir código más limpio y legible. Uno de los conceptos fundamentales en Angular son los componentes. Los componentes son las unidades básicas de construcción en Angular, y nos permiten dividir nuestra aplicación en partes más pequeñas y manejables. Cada componente tiene su propio HTML, CSS y código TypeScript, lo que nos permite trabajar de manera modular y reutilizar componentes en diferentes partes de nuestra aplicación. Además de los componentes, Angular también nos proporciona un sistema de templates muy poderoso. Los templates nos permiten definir la estructura y el contenido de nuestras páginas web de una manera declarativa. Podemos combinar HTML estático con expresiones dinámicas utilizando la sintaxis de Angular, lo que nos permite mostrar información actualizada en nuestra aplicación de forma sencilla. Para comunicarnos con nuestros componentes y compartir datos entre ellos, Angular utiliza el concepto de servicios y la inyección de dependencias. Los servicios son clases que encapsulan la lógica de negocio de nuestra aplicación y nos permiten compartir datos y funcionalidades entre diferentes componentes. La inyección de dependencias es un patrón de diseño que nos permite instanciar y utilizar servicios de manera eficiente y flexible. Por último, pero no menos importante, vamos a hablar sobre el routing y la navegación en Angular. El routing nos permite definir las diferentes rutas o URL de nuestra aplicación y asociarlas a componentes específicos. De esta manera, podemos navegar entre diferentes páginas o vistas de nuestra aplicación de manera sencilla y mantener una experiencia de usuario fluida. En resumen, en este episodio hemos introducido los conceptos básicos de Angular: los componentes, los templates, los servicios y la inyección de dependencias, y el routing y la navegación. Estos conceptos son fundamentales para comprender y utilizar Angular de manera efectiva. En los próximos episodios, nos adentraremos en cada uno de estos temas en detalle, para que puedas convertirte en un experto en Angular. ¡Hasta la próxima!","question": "¿Cuál de los siguientes conceptos es fundamental en Angular para dividir una aplicación en partes más pequeñas y manejables?",
+                  "type": 2,
+                  "answerId": 4,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Templates"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Servicios"
+                    },
+                    {
+                      "id": 3,
+                      "name": "Inyección de dependencias"
+                    },
+                    {
+                      "id": 4,
+                      "name": "Componentes"
+                    }
+                  ]
+                },
+                {
+                  "content": "Bienvenidos a este episodio del micropodcast sobre Angular. En este programa, daremos una introducción a Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web. Angular es un framework de código abierto desarrollado por Google que permite crear aplicaciones web de una manera rápida y eficiente. A lo largo de este episodio, exploraremos los conceptos básicos de Angular, incluyendo componentes, templates, servicios, dependency injection, routing y navegación.",
+                  "question": "¿Quién desarrolló Angular, uno de los frameworks más populares para el desarrollo de aplicaciones web?",
+                  "type": 2,
+                  "answerId": 3,
+                  "options": [
+                    {
+                      "id": 1,
+                      "name": "Facebook"
+                    },
+                    {
+                      "id": 2,
+                      "name": "Microsoft"
+                    },
+                    {
+                      "id": 3,
+                      "name": "Google"
+                    },
+                    {
+                      "id": 4,
+                      "name": "Apple"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+   
   }
 ]
