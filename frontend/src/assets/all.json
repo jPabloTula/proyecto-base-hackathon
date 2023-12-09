@@ -33,7 +33,7 @@
       "frameworks": [
         {
           "id": 1,
-          "frameworkName": "flater"
+          "frameworkName": "Flutter"
         }
       ],
       "tools": [
