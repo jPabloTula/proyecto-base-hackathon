@@ -14,7 +14,7 @@ export class SidebarComponent implements OnInit {
   }
 
   goTo(){
-    this.router.navigate(['/home/dashboard']);
+    this.router.navigate(['/main/dashboard']);
   }
 
 }
