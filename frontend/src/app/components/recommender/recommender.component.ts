@@ -84,7 +84,7 @@ export class RecommenderComponent implements OnInit {
     })
   }
   goBack() {
-    this.router.navigate(['home']);
+    this.router.navigate(['main/dashboard']);
   }
 
   sendResults() {

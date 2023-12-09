@@ -7,10 +7,11 @@
     "password": "35554829",
     "Name": "Martin",
     "surname": "Gutierrez",
-    "seniority": "Training",
+    "seniority": "Junior",
     "legajo": 1,
     "insignia": "{{path}}",
     "technicalProfile": {
+      "totalSkill": 11,
       "programingLanguage": [
         {
           "id": 1,
@@ -65,12 +66,15 @@
       ]
     },
     "trainingPlan": {
-      "planProgress": "30%",
+      "initTotalCourse": 1, 
+      "planProgress": "45%",
+      "nextSeniority": "Semi Senior",
       "courses": [
         {
           "coursesId": "1",
           "name": "Angular desde 0",
           "coursesProgress": "85%",
+          "courseEnable": true,
           "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
           "sections": [
             {
@@ -222,6 +226,16 @@
               ]
             }
           ]
+        }, {
+          "coursesId": "2",
+          "name": "Node.js",
+          "coursesProgress": "0%",
+          "courseEnable": false,
+          "icon": "https://midu.dev/images/tags/node.png",
+          "sections": [
+            {
+            }
+          ]
         }
       ]
     }
@@ -234,10 +248,11 @@
     "password": "39200693",
     "Name": "Fernando",
     "surname": "Murguia",
-    "seniority": "SS1",
+    "seniority": "Junior",
     "legajo": 2,
     "insignia": "{{path}}",
     "technicalProfile": {
+      "totalSkill": 10,
       "programingLanguage": [
         {
           "id": 5,
@@ -288,12 +303,15 @@
       ]
     },
     "trainingPlan": {
-      "planProgress": "70%",
+      "initTotalCourse": 1, 
+      "planProgress": "90%",
+      "nextSeniority": "Semi Senior",
       "courses": [
         {
           "coursesId": "1",
           "name": "Angular desde 0",
           "coursesProgress": "90%",
+          "courseEnable": true,
           "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
           "sections": [
             {
@@ -371,6 +389,17 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "coursesId": "2",
+          "name": "Node.js",
+          "coursesProgress": "100%",
+          "courseEnable": false,
+          "icon": "https://midu.dev/images/tags/node.png",
+          "sections": [
+            {
             }
           ]
         }
