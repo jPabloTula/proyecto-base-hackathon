@@ -67,14 +67,14 @@
     },
     "trainingPlan": {
       "initTotalCourse": 1, 
-      "planProgress": "30%",
+      "planProgress": "45%",
       "nextSeniority": "Semi Senior",
       "courses": [
         {
           "coursesId": "1",
           "name": "Angular desde 0",
           "coursesProgress": "85%",
-          "courseEnable": false,
+          "courseEnable": true,
           "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
           "sections": [
             {
@@ -304,13 +304,14 @@
     },
     "trainingPlan": {
       "initTotalCourse": 1, 
-      "planProgress": "70%",
+      "planProgress": "90%",
       "nextSeniority": "Semi Senior",
       "courses": [
         {
           "coursesId": "1",
           "name": "Angular desde 0",
           "coursesProgress": "90%",
+          "courseEnable": true,
           "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
           "sections": [
             {
@@ -388,6 +389,17 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "coursesId": "2",
+          "name": "Node.js",
+          "coursesProgress": "100%",
+          "courseEnable": false,
+          "icon": "https://midu.dev/images/tags/node.png",
+          "sections": [
+            {
             }
           ]
         }
