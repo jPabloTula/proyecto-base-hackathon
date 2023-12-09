@@ -1,9 +1,9 @@
 <section>
   <div class="container d-flex justify-content-between">
-    <app-stepper *ngIf="index !== 0" (isLast)="checkLast()" (size)="data?.length" class="col-md-6">
+    <app-stepper *ngIf="index !== 0" (isLast)="checkLast()" (size)="data?.length" class="col-md-8">
       <cdk-step *ngFor="let d of data; let i = index">
         <form *ngIf="myForm" [formGroup]="myForm">
-          <div class="d-flex flex-column justify-content-center mb-3">
+          <div class="d-flex flex-column justify-content-start mb-3 contentTextInformation p-3">
             <p class="text-white">{{ d.question }}</p>
             <div class="form-check" *ngFor="let option of d.options">
               <input
