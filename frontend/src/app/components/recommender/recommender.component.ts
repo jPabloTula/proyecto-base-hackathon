@@ -84,7 +84,8 @@ export class RecommenderComponent implements OnInit {
     })
   }
   goBack() {
-    this.router.navigate(['main/dashboard']);
+    const value = '30';
+    this.router.navigate(['main/dashboard'], { queryParams: { newProgressPlan: value }});
   }
 
   sendResults() {

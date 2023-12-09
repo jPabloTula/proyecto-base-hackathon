@@ -17,11 +17,6 @@ const routes: Routes = [
       children: [
         {
           path: '',
-          outlet: 'header',
-          component: HeaderComponent,
-        },
-        {
-          path: '',
           outlet: 'footer',
           component: FooterComponent,
         },

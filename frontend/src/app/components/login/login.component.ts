@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     setTimeout(() => {
       this.view = false;
       this.backgroundCharge = '';
-      this.router.navigate(['/main']);
+      this.router.navigate(['/main/dashboard']);
     }, 1000);
     console.log('Nombre de usuario:', this.username);
     console.log('Contraseña:', this.password);

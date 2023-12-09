@@ -1,14 +1,18 @@
-<div id="header">  
-    <router-outlet name="header" ></router-outlet>
-</div>
-<div class="container">
-    <div id="sidebar">
-        <router-outlet name="sidebar"></router-outlet>
-    </div>
-    <div id="content">
-        <router-outlet></router-outlet>
+<div id="header">
+    <div class="row">
+        <div class="col-md-4 col-sm-4">
+            <img src="assets/img/up.jpeg" (click)="toggleSidebar()" style="cursor: pointer;" class="img-fluid" alt="Descripción de la imagen">
+        </div>
     </div>
   </div>
-<div id="footer">
+  <div class="container">
+    <div id="sidebar" [ngClass]="{ 'collapsed': isSidebarCollapsed }">
+      <router-outlet name="sidebar"></router-outlet>
+    </div>
+    <div id="content" [ngClass]="{ 'expanded': !isSidebarCollapsed }">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div id="footer">
     <router-outlet name="footer"></router-outlet>
-</div>
+  </div>
