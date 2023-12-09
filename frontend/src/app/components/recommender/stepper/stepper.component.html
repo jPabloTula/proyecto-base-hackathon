@@ -15,6 +15,6 @@
       >
         Step {{ i + 1 }}
       </button>
-      <button *ngIf="selectedIndex <= size + 1" class="btn btn-primary m-1" (click)="nextStep(selectedIndex)">&rarr;</button>
+      <button *ngIf="selectedIndex <= size" class="btn btn-primary m-1" (click)="nextStep(selectedIndex)">&rarr;</button>
     </footer>
   </section>

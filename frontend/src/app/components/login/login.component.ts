@@ -5,20 +5,26 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
   username: string = '';
   password: string = '';
-  
-  constructor(private router: Router) { }
+  view: boolean = false;
+  backgroundCharge: string = '';
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onSubmit(form: NgForm) {
+    this.view = true;
+    this.backgroundCharge = 'backgroundCharge';
+    setTimeout(() => {
+      this.view = false;
+      this.backgroundCharge = '';
+      this.router.navigate(['/home']);
+    }, 1000);
     console.log('Nombre de usuario:', this.username);
     console.log('Contraseña:', this.password);
-    this.router.navigate(['/main']);
   }
 }

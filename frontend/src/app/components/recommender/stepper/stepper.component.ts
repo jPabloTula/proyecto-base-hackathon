@@ -9,11 +9,10 @@ import { CdkStepper } from '@angular/cdk/stepper';
 })
 export class StepperComponent extends CdkStepper implements OnInit  {
   @Output() isLast: EventEmitter<any> = new EventEmitter<any>();
-  @Input() size: number = 0;
+  @Input() size!: number;
   currentIndex: number = 0;
 
   ngOnInit(): void {
-    
   }
   selectStepByIndex(index: number): void {
     this.selectedIndex = index;
@@ -21,9 +20,8 @@ export class StepperComponent extends CdkStepper implements OnInit  {
 
   nextStep(index: number): void {
     this.next();
-    console.log('index', index);
-    if (this.currentIndex <= index) {
-      ++this.currentIndex;
+    if (index+1 < this.size) {
+      console.log('index', index);
     } else {
       this.isLast.emit(true);
     }
