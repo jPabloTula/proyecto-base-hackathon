@@ -63,11 +63,11 @@
                     <div class="col-md-10 col-sm-12">
                         <div class="d-flex justify-content-between mt-2">
                             <h6>Percentage to finish</h6>
-                            <h6 class="justify-content-end">{{progressPlan}}</h6>
+                            <h6 class="justify-content-end">{{newProgressPlan ? '50%' : progressPlan}}</h6>
                         </div>
                         <div class="progress mb-3">
                             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                aria-valuemax="80" [style.width]="progressPlan">
+                                aria-valuemax="80" [style.width]="newProgressPlan ? '50%' : progressPlan">
                             </div>
                         </div>
                     </div>
@@ -83,11 +83,11 @@
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex justify-content-between mt-2">
                                 <h6 class="ml-3">{{item.name}}</h6>
-                                <h6 class="justify-content-end">{{item.coursesProgress}}</h6>
+                                <h6 class="justify-content-end">{{newProgressPlan ? '100%' : item.coursesProgress}}</h6>
                             </div>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                    aria-valuemax="80" [style.width]="item.coursesProgress">
+                                    aria-valuemax="80" [style.width]="newProgressPlan ? '100%' : item.coursesProgress">
                                 </div>
                             </div>
                         </div>

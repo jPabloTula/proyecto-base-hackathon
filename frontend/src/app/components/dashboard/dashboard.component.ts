@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -12,11 +12,20 @@ export class DashboardComponent implements OnInit {
   datos: any;
   progressPlan: any;
   progressCourse: any;
+  newProgressPlan: any;
 
   constructor(
     private dataService: DataService,
-    private router: Router
-  ) { }
+    private router: Router,
+    private route: ActivatedRoute
+  ) {
+    this.route.queryParams.subscribe(params => {
+      this.newProgressPlan = params['newProgressPlan'];
+      if (this.newProgressPlan) {
+        this.progressPlan = this.newProgressPlan;
+      }
+    })
+  }
 
   ngOnInit(): void {
     this.getDataFromJson();
@@ -32,7 +41,7 @@ export class DashboardComponent implements OnInit {
     })
   }
 
-  goCouse(){
+  goCouse() {
     this.router.navigate(['/main/recommender']);
   }
 
