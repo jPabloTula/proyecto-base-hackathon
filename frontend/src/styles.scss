@@ -47,9 +47,9 @@ body {
   width: 160px;
   min-height: 80vh;
   flex-shrink: 0;
+  overflow: hidden;
   border-right: 2px solid #8e44ad;
   transition: all 0.3s;
-  /* Agrega la transición aquí para ambas versiones */
 }
 
 #content {
@@ -60,51 +60,35 @@ body {
 
 @media (max-width: 768px) {
   #sidebar {
-    /* Estilos para el sidebar en versión mobile */
-    
     min-height: 100vh;
     width: 160px;
-    /* Ajusta el ancho según sea necesario */
     overflow-x: hidden;
     transition: all 0.3s;
     z-index: 1;
-    /* Coloca el sidebar sobre el contenido */
   }
 
   #sidebar.collapsed {
-    /* Estilos para el sidebar colapsado en versión mobile */
     width: 0;
   }
 
   #content {
-    /* Estilos para el contenido en versión mobile */
-    //margin-left: 160px;
-    /* Ajusta según sea necesario */
     transition: all 0.5s;
-    //width: calc(100% - 160px);
-    /* Asegura que el contenido ocupe el ancho disponible */
   }
 
   #content.expanded {
-    /* Estilos adicionales para el contenido cuando el sidebar está expandido en versión mobile */
-    /* Ajusta según sea necesario */
     transition: all 0.5s;
   }
 }
 
-/* Estilos para el sidebar en versiones mayores a 768px */
 #sidebar {
-  /* Estilos para el sidebar no colapsado (ancho completo) */
   transition: all 0.5s;
 }
 
 #sidebar.collapsed {
-  /* Estilos para el sidebar colapsado (ancho cero) */
   width: 0;
 }
 
 #content.expanded {
-  /* Estilos para el contenido cuando el sidebar está expandido */
   transition: all 0.5s;
 }
 
